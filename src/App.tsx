@@ -18,7 +18,7 @@ class App extends React.Component<{}, IAppState> {
     );
   }
   private incHandler: React.MouseEventHandler<HTMLButtonElement> = () => {
-    this.setState(prevState => {
+    this.setState((prevState: IAppState) => {
       return { counterValue: prevState.counterValue + 1 };
     });
   };
